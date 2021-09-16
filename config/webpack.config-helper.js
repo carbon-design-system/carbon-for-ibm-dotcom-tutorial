@@ -38,6 +38,7 @@ function _renderPageEntries() {
       new HtmlWebpackPlugin({
         hash: true,
         inject: true,
+        template: path.join(__dirname, `../src/${pages[i]}`),
         filename: `./${pages[i]}`,
       })
     );
