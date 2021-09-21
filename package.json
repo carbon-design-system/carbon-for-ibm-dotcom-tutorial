@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "webpack --config ./config/webpack-prod.config.js",
+    "ci-check": "yarn lint && yarn lint:styles",
     "clean": "rimraf dist",
     "lint": "eslint src",
     "lint:styles": "stylelint '**/*.{css,scss}'",
