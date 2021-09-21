@@ -1,6 +1,6 @@
 ---
 name: Feature Request 💡
-about: Suggest a new idea for the project.
+about: Suggest a new idea for the tutorial.
 title: ''
 labels: Feature request
 assignees: jeffchew, shixiedesign, ljcarot, RobertaJHahn

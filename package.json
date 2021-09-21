@@ -3,11 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "clean": "rimraf dist",
     "build": "webpack --config ./config/webpack-prod.config.js",
-    "start": "webpack serve --config ./config/webpack-dev.config.js",
+    "clean": "rimraf dist",
     "lint": "eslint src",
-    "lint:styles": "stylelint '**/*.{css,scss}'"
+    "lint:styles": "stylelint '**/*.{css,scss}'",
+    "start": "webpack serve --config ./config/webpack-dev.config.js"
   },
   "devDependencies": {
     "@actions/core": "^1.2.6",

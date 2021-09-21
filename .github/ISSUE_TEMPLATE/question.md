@@ -1,6 +1,6 @@
 ---
 name: Question 🤔
-about: Usage question or discussion about the Carbon for IBM.com Web Components Template Application.
+about: Usage question or discussion about the Carbon for IBM.com Web Components Tutorial.
 labels: question
 assignees: jeffchew, shixiedesign, ljcarot, RobertaJHahn
 ---
