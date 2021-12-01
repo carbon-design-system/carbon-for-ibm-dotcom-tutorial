@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="This is an example page for the Carbon for IBM.com Tutorial"
-      />
+      content="This is an example page for the Carbon for IBM.com Tutorial" />
     <meta charset="UTF-8" />
     <link rel="icon" href="//www.ibm.com/favicon.ico" />
     <meta name="dcterms.date" content="1955-11-05" />
@@ -45,9 +44,9 @@
           },
         },
       };
-      
+
       var params = new URLSearchParams(window.location.search);
-      
+
       if (params.has('lc') && params.has('cc')) {
         var currentLang =
           params.get('lc') + '-' + params.get('cc').toUpperCase();
@@ -61,8 +60,7 @@
     <script
       src="//1.www.s81c.com/common/stats/ibm-common.js"
       type="text/javascript"
-      async="async"
-      ></script>
+      async="async"></script>
   </head>
   <body>
     <dds-dotcom-shell-container>
@@ -70,44 +68,56 @@
         <div class="bx--row">
           <div class="bx--col-lg-8 bx--offset-lg-4 bx--no-gutter">
             <dds-leadspace-with-search adjacent-theme="g90-and-g100">
-              <dds-leadspace-block-heading slot='heading'>Find analytics services</dds-leadspace-block-heading>
-              <dds-leadspace-block-content slot='content'>
-                <dds-leadspace-search-block-heading>Make fast and accurate data-based decisions</dds-leadspace-search-block-heading>
+              <dds-leadspace-block-heading slot="heading"
+                >Find analytics services</dds-leadspace-block-heading
+              >
+              <dds-leadspace-block-content slot="content">
+                <dds-leadspace-search-block-heading
+                  >Make fast and accurate data-based
+                  decisions</dds-leadspace-search-block-heading
+                >
               </dds-leadspace-block-content>
-              <dds-search-with-typeahead slot='search' leadspace-search></dds-search-with-typeahead>
-            </dds-leadspace-with-search>
-            <dds-hr slot='hr'></dds-hr>
+              <dds-search-with-typeahead
+                slot="search"
+                leadspace-search></dds-search-with-typeahead>
             </dds-leadspace-with-search>
           </div>
         </div>
       </div>
-      <dds-table-of-contents toc-layout='horizontal' stickyOffset='48'>
+      <dds-table-of-contents toc-layout="horizontal" stickyOffset="48">
         <a name="1" data-title="Main benefits of analytics">
           <dds-card-section-offset>
             <dds-background-media
               gradient-direction="left-to-right"
               mobile-position="top"
               alt="alt text"
-              default-src="./assets/images/WC-tutorial-example--card-section-offset.jpg"
-              >
-              <dds-image-item media="(min-width: 620px)" srcset="./assets/images/WC-tutorial-example--card-section-offset.jpg"> </dds-image-item>
+              default-src="./assets/images/WC-tutorial-example--card-section-offset.jpg">
+              <dds-image-item
+                media="(min-width: 620px)"
+                srcset="./assets/images/WC-tutorial-example--card-section-offset.jpg">
+              </dds-image-item>
             </dds-background-media>
-            <dds-content-block-heading slot="heading">A quick look at the main benefits of analytics</dds-content-block-heading>
+            <dds-content-block-heading slot="heading"
+              >A quick look at the main benefits of
+              analytics</dds-content-block-heading
+            >
             <dds-text-cta
               slot="action"
               cta-type="local"
               icon-placement="right"
-              href="https://example.com"
-              >
+              href="https://example.com">
               See the full range of benefits
             </dds-text-cta>
             <dds-card-group slot="card-group" cards-per-row="2">
               <dds-card-group-item empty></dds-card-group-item>
               <dds-card-group-item href="https://example.com">
                 <dds-card-eyebrow>Collaboration</dds-card-eyebrow>
-                <dds-card-heading>Connect teams across functions</dds-card-heading>
+                <dds-card-heading
+                  >Connect teams across functions</dds-card-heading
+                >
                 <p>
-                  Collaborate in teams across functions to access all trusted data and best-in- class technologies.
+                  Collaborate in teams across functions to access all trusted
+                  data and best-in- class technologies.
                 </p>
                 <dds-card-cta-footer slot="footer">
                   <svg
@@ -118,17 +128,20 @@
                     aria-hidden="true"
                     width="20"
                     height="20"
-                    viewBox="0 0 20 20"
-                    >
-                    <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
+                    viewBox="0 0 20 20">
+                    <path
+                      d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
                   </svg>
                 </dds-card-cta-footer>
               </dds-card-group-item>
               <dds-card-group-item href="https://example.com">
                 <dds-card-eyebrow>Innovation</dds-card-eyebrow>
-                <dds-card-heading>Discover new insights from data</dds-card-heading>
+                <dds-card-heading
+                  >Discover new insights from data</dds-card-heading
+                >
                 <p>
-                  Use multiple analytics technologies to learn from data and quickly get new answers for your business.
+                  Use multiple analytics technologies to learn from data and
+                  quickly get new answers for your business.
                 </p>
                 <dds-card-cta-footer slot="footer">
                   <svg
@@ -139,17 +152,20 @@
                     aria-hidden="true"
                     width="20"
                     height="20"
-                    viewBox="0 0 20 20"
-                    >
-                    <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
+                    viewBox="0 0 20 20">
+                    <path
+                      d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
                   </svg>
                 </dds-card-cta-footer>
               </dds-card-group-item>
               <dds-card-group-item href="https://example.com">
                 <dds-card-eyebrow>Fast delivery</dds-card-eyebrow>
-                <dds-card-heading>Accelerate delivery of insights</dds-card-heading>
+                <dds-card-heading
+                  >Accelerate delivery of insights</dds-card-heading
+                >
                 <p>
-                  Deliver new insights to your business quickly, and continuously improve them through rapid iteration.
+                  Deliver new insights to your business quickly, and
+                  continuously improve them through rapid iteration.
                 </p>
                 <dds-card-cta-footer slot="footer">
                   <svg
@@ -160,9 +176,9 @@
                     aria-hidden="true"
                     width="20"
                     height="20"
-                    viewBox="0 0 20 20"
-                    >
-                    <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
+                    viewBox="0 0 20 20">
+                    <path
+                      d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
                   </svg>
                 </dds-card-cta-footer>
               </dds-card-group-item>
@@ -174,53 +190,55 @@
             <dds-cta-section>
               <dds-content-section-heading slot="heading"
                 >Take the next step</dds-content-section-heading
-                >
+              >
               <dds-cta-block no-border>
                 <dds-content-block-heading
                   >Engage an expert</dds-content-block-heading
-                  >
+                >
                 <dds-content-block-copy
                   >Schedule a one-on-one, no-cost consultation with experts to
-                  accelerate your integration of analytics
-                  services.
-                </dds-content-block-copy
-                  >
+                  accelerate your integration of analytics services.
+                </dds-content-block-copy>
                 <dds-text-cta
                   slot="action"
                   cta-type="local"
                   icon-placement="right"
                   href="example.com"
                   >Book a consultation</dds-text-cta
-                  >
+                >
                 <dds-link-list slot="link-list" type="end">
                   <dds-link-list-heading
-                    >More ways to explore IBM analytics
-                    services
-                  </dds-link-list-heading
-                    >
+                    >More ways to explore IBM analytics services
+                  </dds-link-list-heading>
                   <dds-link-list-item href="https://example.com">
-                    Events 
-                    <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
+                    Events
+                    <path
+                      d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
                   </dds-link-list-item>
                   <dds-link-list-item href="https://example.com">
-                    Blogs 
-                    <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
+                    Blogs
+                    <path
+                      d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
                   </dds-link-list-item>
                   <dds-link-list-item href="https://example.com">
-                    Training 
-                    <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
+                    Training
+                    <path
+                      d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
                   </dds-link-list-item>
                   <dds-link-list-item href="https://example.com">
-                    Developer resources 
-                    <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
+                    Developer resources
+                    <path
+                      d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
                   </dds-link-list-item>
                   <dds-link-list-item href="https://example.com">
-                    Research 
-                    <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
+                    Research
+                    <path
+                      d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
                   </dds-link-list-item>
                   <dds-link-list-item href="https://example.com">
-                    News 
-                    <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
+                    News
+                    <path
+                      d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
                   </dds-link-list-item>
                 </dds-link-list>
               </dds-cta-block>
