@@ -11,5 +11,5 @@
 .dark-theme {
   @include carbon--theme($carbon--theme--g100, true);
 
-  background-color: $ui-background;
+  background-color: var(--cds-ui-background);
 }
