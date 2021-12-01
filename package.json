@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "webpack --config ./config/webpack-prod.config.js",
+    "ci-check": "yarn lint && yarn lint:styles",
     "clean": "rimraf dist",
     "lint": "eslint src",
     "lint:styles": "stylelint '**/*.{css,scss}'",
@@ -55,7 +56,7 @@
   },
   "dependencies": {
     "@carbon/grid": "10.35.0",
-    "@carbon/ibmdotcom-web-components": "1.9.0",
+    "@carbon/ibmdotcom-web-components": "1.12.0",
     "@carbon/themes": "10.42.0",
     "@carbon/type": "10.35.0",
     "carbon-components": "10.43.0",
