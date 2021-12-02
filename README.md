@@ -6,7 +6,7 @@ teach you the ins and outs of using Carbon components, while introducing web
 development best practices along the way.
 
 Get started by visiting the
-[tutorial instructions](https://www.ibm.com/standards/carbon/tutorial/web-components/overview).
+[tutorial instructions](https://www.ibm.com/standards/carbon/developing/web-components-tutorial/overview).
 
 ## Getting started
 
