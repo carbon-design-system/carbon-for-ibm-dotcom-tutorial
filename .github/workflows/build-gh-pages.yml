@@ -16,31 +16,37 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: Build the corresponding step to gh-pages branch
-        env:
-          STEP_NUM: "${GITHUB_REF: -1}"
+        with:
+          token: ${{ secrets.BOT_TOKEN }}
+      - name: Build the corresponding step
         run: |
-          export
+          # Get all branches
+          git fetch
+
           # Build the app
           yarn && yarn build
 
           # Switch to `gh-pages` branch
           git checkout gh-pages
 
-          # Make the directory if it doesn't exist
-          mkdir -p step-${STEP_NUM}
+          # Delete the folder first
+          rm -rf "step-${GITHUB_REF: -1}"
 
-          # Clean the folder first
-          rm -rf step-${STEP_NUM}/*
+          # Make the directory
+          mkdir "step-${GITHUB_REF: -1}"
 
           # move the build app to step folder
-          mv -v dist/* step-${STEP_NUM}
+          mv -v dist/* "step-${GITHUB_REF: -1}"
 
           # push up changes
           if [ -z "$(git status --porcelain)" ]; then
             echo "Mirror is clean, exiting..."
           else
+            git config --global user.email ${{ secrets.BOT_EMAIL }}
+            git config --global user.name ${{ secrets.BOT_NAME }}
+            git config --global github.token ${{ secrets.BOT_TOKEN }}
+
             git add -A
-            git commit -m "chore(gh-pages): update step ${STEP_NUM} demo"
+            git commit -m "chore(gh-pages): update step ${GITHUB_REF: -1} demo"
             git push origin gh-pages
           fi
