@@ -1,0 +1,50 @@
+name: "Build GH Pages"
+
+on:
+  push:
+    branches: [ web-components-step-* ]
+
+jobs:
+  build-pages:
+    name: Build the steps to the gh-pages branch
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [ '14.x' ]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Build the corresponding step
+        run: |
+          # Get all branches
+          git fetch
+
+          # Build the app
+          yarn && yarn build
+
+          # Switch to `gh-pages` branch
+          git checkout gh-pages
+
+          # Delete the folder first
+          rm -rf "step-${GITHUB_REF: -1}"
+
+          # Make the directory
+          mkdir "step-${GITHUB_REF: -1}"
+
+          # move the build app to step folder
+          mv -v dist/* "step-${GITHUB_REF: -1}"
+
+          # push up changes
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Mirror is clean, exiting..."
+          else
+            git config --global user.email ${{ secrets.BOT_EMAIL }}
+            git config --global user.name ${{ secrets.BOT_NAME }}
+            git config --global github.token ${{ secrets.BOT_TOKEN }}
+
+            git add -A
+            git commit -m "chore(gh-pages): update step ${GITHUB_REF: -1} demo"
+            git push origin gh-pages
+          fi
