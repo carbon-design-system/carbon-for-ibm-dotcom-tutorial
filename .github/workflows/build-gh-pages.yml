@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.BOT_TOKEN }}
       - name: Build the corresponding step
         run: |
           # Get all branches
