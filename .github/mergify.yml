@@ -1,8 +1,8 @@
 pull_request_rules:
   - name: Close when CI Passes
     conditions:
-      - status-success="ci-check / lint"
-      - status-success="test / e2e"
+      - status-success="lint"
+      - status-success="e2e"
     actions:
       close:
         message:
@@ -14,8 +14,8 @@ pull_request_rules:
   - name: Comment when CI fails
     conditions:
       - or:
-        - status-failure="ci-check / lint"
-        - status-failure="test / e2e"
+          - status-failure="lint"
+          - status-failure="e2e"
     actions:
       comment:
         message:
