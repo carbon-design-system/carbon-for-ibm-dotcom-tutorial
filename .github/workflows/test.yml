@@ -10,6 +10,7 @@ concurrency:
 
 jobs:
   e2e:
+    name: e2e tests
     runs-on: ubuntu-20.04
     strategy:
       matrix:
