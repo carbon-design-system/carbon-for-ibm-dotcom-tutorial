@@ -4,6 +4,7 @@
   "headless": true,
   "includeShadowDom": true,
   "testFiles": "*.e2e.js",
+  "video": false,
   "pageLoadTimeout": 40000,
   "defaultCommandTimeout": 40000
 }
