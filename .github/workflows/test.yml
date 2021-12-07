@@ -10,6 +10,8 @@ concurrency:
 
 jobs:
   e2e:
+    if: 
+      branches: [ web-components-step-5 ]
     name: e2e tests
     runs-on: ubuntu-20.04
     steps:
