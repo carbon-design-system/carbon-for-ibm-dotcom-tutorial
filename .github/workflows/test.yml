@@ -18,11 +18,9 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - name: Check base branch
-        ${{ if ne(variables['Build.SourceBranchName'], 'web-components-step-5') }}:
-          - name: Install dependencies
-            run: yarn install
-          - name: Build project
-            run: yarn build
+      - name: Install dependencies
+        run: yarn install
+      - name: Build project
+        run: yarn build
       - name: Run e2e tests
         run: yarn test
