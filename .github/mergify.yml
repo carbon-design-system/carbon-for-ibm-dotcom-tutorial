@@ -13,9 +13,7 @@ pull_request_rules:
         remove: ['status: needs correction']
   - name: Comment when CI fails
     conditions:
-      - or:
-        - check-failure=lint
-        - check-failure=e2e tests
+      - "#check-failure>0"
     actions:
       comment:
         message:
