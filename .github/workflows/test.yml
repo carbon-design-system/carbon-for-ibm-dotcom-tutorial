@@ -1,17 +1,15 @@
-name: ci-check
+name: test
 
 on:
-  push:
-    branches: [ main, web-components-step-* ]
   pull_request:
-    branches: [ main, web-components-step-* ]
+    branches: [ web-components-step-* ]
 
 concurrency:
-  group: ci-check-${{ github.ref }}
+  group: test-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  lint:
+  e2e:
     runs-on: ubuntu-20.04
     strategy:
       matrix:
@@ -26,5 +24,5 @@ jobs:
         run: yarn install
       - name: Build project
         run: yarn build
-      - name: Run CI Checks
-        run: yarn lint && yarn lint:styles
+      - name: Run e2e tests
+        run: yarn test

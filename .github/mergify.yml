@@ -1,0 +1,27 @@
+pull_request_rules:
+  - name: Close when CI Passes
+    conditions:
+      - 'status-success=ci-check / lint (14.x) (pull_request)'
+      - 'status-success=test / e2e (14.x) (pull_request)'
+    actions:
+      close:
+        message:
+          'Looks good - You are one step closer to completion of the Carbon
+          for IBM.com Web Components tutorial and earning the digital credential.'
+      label:
+        add: ['status: approved']
+        remove: ['status: needs correction']
+  - name: Comment when CI fails
+    conditions:
+      - or:
+        - 'status-failure=ci-check / lint (14.x) (pull_request)'
+        - 'status-failure=test / e2e (14.x) (pull_request)'
+    actions:
+      comment:
+        message:
+          'Hi, it looks like you are missing something. Double check your code,
+          your preview URL should match the
+          [preview](https://www.ibm.com/standards/carbon/developing/web-components-tutorial/step-1#preview)
+          in the tutorial.'
+      label:
+        add: ['status: needs correction']
