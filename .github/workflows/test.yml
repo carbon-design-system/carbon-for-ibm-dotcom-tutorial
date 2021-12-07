@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: yarn install
       - name: Run cypress test
-        run: start-server-and-test 'http-server -c-1 dist --silent' 8080   'cypress run --config baseUrl=https://carbon-design-system.github.io/carbon-for-ibm-dotcom-tutorial/step-4/'
+        run: yarn run start-server-and-test 'http-server -c-1 dist --silent' 8080   'cypress run --config baseUrl=https://carbon-design-system.github.io/carbon-for-ibm-dotcom-tutorial/step-4/'
   e2e:
     name: e2e tests
     if: github.event.pull_request.base.ref != 'web-components-step-5'
