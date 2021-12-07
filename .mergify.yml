@@ -1,7 +1,8 @@
 pull_request_rules:
-  - name: Close when CI Passes Step 1
+  - name: Close when CI Passes
     conditions:
-      - 'status-success=ci-check / step-1'
+      - 'status-success=ci-check / lint'
+      - 'status-success=test / e2e'
     actions:
       close:
         message:
@@ -10,9 +11,10 @@ pull_request_rules:
       label:
         add: ['status: approved']
         remove: ['status: needs correction']
-  - name: Comment when CI fails Step 1
+  - name: Comment when CI fails
     conditions:
-      - 'status-failure=ci-check / step-1'
+      - 'status-failure=ci-check / lint'
+      - 'status-failure=test / e2e'
     actions:
       comment:
         message:
@@ -20,99 +22,5 @@ pull_request_rules:
           your preview URL should match the
           [preview](https://www.ibm.com/standards/carbon/developing/web-components-tutorial/step-1#preview)
           in the tutorial.'
-      label:
-        add: ['status: needs correction']
-  - name: Close when CI Passes Step 2
-    conditions:
-      - 'status-success=ci-check / step-2'
-    actions:
-      close:
-        message:
-          'Looks good - You are one step closer to completion of the Carbon
-          for IBM.com Web Components tutorial and earning the digital credential.'
-      label:
-        add: ['status: approved']
-        remove: ['status: needs correction']
-  - name: Comment when CI fails Step 2
-    conditions:
-      - 'status-failure=ci-check / step-2'
-    actions:
-      comment:
-        message:
-          'Hi, it looks like you are missing something. Double check your code,
-          your preview URL should match the
-          [preview](https://www.ibm.com/standards/carbon/developing/web-components-tutorial/step-2#preview)
-          in the tutorial.'
-      label:
-        add: ['status: needs correction']
-  - name: Close when CI Passes Step 3
-    conditions:
-      - 'status-success=ci-check / step-3'
-    actions:
-      close:
-        message:
-          'Looks good - You are one step closer to completion of the Carbon
-          for IBM.com Web Components tutorial and earning the digital credential.'
-      label:
-        add: ['status: approved']
-        remove: ['status: needs correction']
-  - name: Comment when CI fails Step 3
-    conditions:
-      - 'status-failure=ci-check / step-3'
-    actions:
-      comment:
-        message:
-          'Hi, it looks like you are missing something. Double check your code,
-          your preview URL should match the
-          [preview](https://www.ibm.com/standards/carbon/developing/web-components-tutorial/step-3#preview)
-          in the tutorial.'
-      label:
-        add: ['status: needs correction']
-  - name: Close when CI Passes Step 4
-    conditions:
-      - 'status-success=ci-check / step-4'
-    actions:
-      close:
-        message:
-          'Looks good - You are one step closer to completion of the Carbon
-          for IBM.com Web Components tutorial and earning the digital credential.'
-      label:
-        add: ['status: approved']
-        remove: ['status: needs correction']
-  - name: Comment when CI fails Step 4
-    conditions:
-      - 'status-failure=ci-check / step-4'
-    actions:
-      comment:
-        message:
-          'Hi, it looks like you are missing something. Double check your code,
-          your preview URL should match the
-          [preview](https://www.ibm.com/standards/carbon/developing/web-components-tutorial/step-4#preview)
-          in the tutorial.'
-      label:
-        add: ['status: needs correction']
-  - name: Close when CI Passes Step 5
-    conditions:
-      - 'status-success=ci-check / step-5'
-    actions:
-      close:
-        message:
-          "Congratulations! You've completed the Carbon for IBM.com tutorial for Web Components! Feel
-          free to stop this running application on IBM Cloud to avoid the
-          possibility of incurring any charges. Please see the wrapping up step
-          to apply for your badge!
-          https://www.ibm.com/standards/carbon/developing/web-components-tutorial/wrapping-up"
-      label:
-        add: ['status: approved']
-        remove: ['status: needs correction']
-  - name: Comment when CI fails Step 5
-    conditions:
-      - 'status-failure=ci-check / step-5'
-    actions:
-      comment:
-        message:
-          'Hi, it looks like you are missing something. Double check the
-          [instructions](https://www.ibm.com/standards/carbon/developing/web-components-tutorial/step-5)
-          in step 5 of the tutorial.'
       label:
         add: ['status: needs correction']

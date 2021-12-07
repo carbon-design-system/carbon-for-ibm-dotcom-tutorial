@@ -11,7 +11,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  step-2:
+  lint:
     runs-on: ubuntu-20.04
     strategy:
       matrix:
