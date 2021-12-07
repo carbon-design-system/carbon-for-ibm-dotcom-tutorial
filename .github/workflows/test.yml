@@ -12,7 +12,9 @@ jobs:
   e2e-on-github-page:
     name: e2e tests for the github page
     runs-on: ubuntu-20.04
-    if: ${{ github.ref == 'refs/heads/web-components-step-5' }}
+    if:
+      branches: 
+        - 'web-components-step-5'
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js
