@@ -15,29 +15,29 @@ jobs:
       name: e2e tests for the github page
       runs-on: ubuntu-20.04
       steps:
-        - uses: actions/checkout@v2
-        - name: Use Node.js
-          uses: actions/setup-node@v2
-          with:
-            node-version: '14'
-        - name: Install dependencies
-          run: yarn install
-        - name: Run e2e tests
-          run: yarn test
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Install dependencies
+        run: yarn install
+      - name: Run e2e tests
+        run: yarn test
   e2e:
     if: 
       branches-ignore: [ web-components-step-5 ]
       name: e2e tests
       runs-on: ubuntu-20.04
       steps:
-        - uses: actions/checkout@v2
-        - name: Use Node.js
-          uses: actions/setup-node@v2
-          with:
-            node-version: '14'
-        - name: Install dependencies
-          run: yarn install
-        - name: Build project
-          run: yarn build
-        - name: Run e2e tests
-          run: yarn test
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Install dependencies
+        run: yarn install
+      - name: Build project
+        run: yarn build
+      - name: Run e2e tests
+        run: yarn test
