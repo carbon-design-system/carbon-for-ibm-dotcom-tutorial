@@ -9,7 +9,7 @@ pull_request_rules:
           'Looks good - You are one step closer to completion of the Carbon
           for IBM.com Web Components tutorial and earning the digital credential.'
       label:
-        add: ['status: approved']
+        # add: ['status: approved']
         remove: ['status: needs correction']
   - name: Comment when CI fails
     conditions:
