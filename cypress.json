@@ -1,0 +1,9 @@
+{
+  "baseUrl": "http://localhost:8080",
+  "browser": "chrome",
+  "headless": true,
+  "includeShadowDom": true,
+  "testFiles": "*.e2e.js",
+  "pageLoadTimeout": 40000,
+  "defaultCommandTimeout": 40000
+}

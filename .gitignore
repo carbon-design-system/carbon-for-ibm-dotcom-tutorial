@@ -108,3 +108,7 @@ dist
 *.swp
 .idea
 .vscode
+
+# Cypress
+cypress/screenshots
+cypress/videos

@@ -1,22 +1,10 @@
 {
-  "env": {
-    "node": true,
-    "browser": true,
-    "es6": true,
-    "jest": true,
-    "jasmine": true
-  },
+  "parser": "@babel/eslint-parser",
   "extends": [
     "eslint:recommended",
     "plugin:jsdoc/recommended"
   ],
-  "globals": {
-    "__DEV__": true
-  },
-  "parser": "babel-eslint",
-  "plugins": [
-    "jsdoc"
-  ],
+  "plugins": ["jsdoc", "tree-shaking"],
   "rules": {
     // Handle cases where we are destructuring but may not be using the initial
     // variables
@@ -53,7 +41,29 @@
     "jsdoc/valid-types": 2,
     "jsdoc/check-param-names": 2,
     "jsdoc/check-tag-names": 2,
-    "jsdoc/check-types": 2
+    "jsdoc/check-types": 2,
+    "jsdoc/check-values": 0
+  },
+  "overrides": [
+    {
+      "files": ["cypress/**/*.e2e.js", "cypress/**/*.js"],
+      "extends": [
+        "plugin:cypress/recommended"
+      ],
+      "parserOptions": {
+        "sourceType": "module"
+      }
+    }
+  ],
+  "env": {
+    "node": true,
+    "browser": true,
+    "es6": true,
+    "jest": true,
+    "jasmine": true
+  },
+  "globals": {
+    "__DEV__": true
   },
   "settings": {
     "jsdoc": {
