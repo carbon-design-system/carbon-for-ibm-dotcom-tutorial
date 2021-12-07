@@ -13,13 +13,13 @@ pull_request_rules:
         remove: ['status: needs correction']
   - name: Comment when CI fails
     conditions:
-      - "#check-failure>0"
+      - check-failure=e2e tests
     actions:
       comment:
         message:
           'Hi, it looks like you are missing something. Double check your code,
           your preview URL should match the
-          [preview](https://www.ibm.com/standards/carbon/developing/web-components-tutorial/step-1#preview)
+          [corresponding step](https://www.ibm.com/standards/carbon/developing/web-components-tutorial/overview)
           in the tutorial.'
       label:
         add: ['status: needs correction']
