@@ -10,8 +10,8 @@ concurrency:
 
 jobs:
   e2e-on-github-page:
-    if: 
-      branches: [ web-components-step-5 ]
+    branches: 
+      - 'web-components-step-5'
     name: e2e tests for the github page
     runs-on: ubuntu-20.04
     steps:
@@ -25,8 +25,8 @@ jobs:
       - name: Run e2e tests
         run: yarn test
   e2e:
-    if: 
-      branches: [ web-components-step-1, web-components-step-2, web-components-step-3, web-components-step-4 ]
+    branches:
+      - '!web-components-step-5'
     name: e2e tests
     runs-on: ubuntu-20.04
     steps:
