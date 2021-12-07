@@ -2,7 +2,7 @@ pull_request_rules:
   - name: Close when CI Passes
     conditions:
       - status-success="lint"
-      - status-success="e2e"
+      - status-success="e2e tests"
     actions:
       close:
         message:
@@ -15,7 +15,7 @@ pull_request_rules:
     conditions:
       - or:
           - status-failure="lint"
-          - status-failure="e2e"
+          - status-failure="e2e tests"
     actions:
       comment:
         message:
