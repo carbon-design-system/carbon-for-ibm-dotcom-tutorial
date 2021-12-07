@@ -13,8 +13,9 @@ pull_request_rules:
         remove: ['status: needs correction']
   - name: Comment when CI fails
     conditions:
-      - 'status-failure=ci-check / lint'
-      - 'status-failure=test / e2e'
+      - or:
+          - 'status-failure=ci-check / lint'
+          - 'status-failure=test / e2e'
     actions:
       comment:
         message:
