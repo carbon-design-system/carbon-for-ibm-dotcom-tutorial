@@ -10,10 +10,12 @@ concurrency:
 
 jobs:
   e2e-on-github-page:
-    branches: 
-      - 'web-components-step-5'
     name: e2e tests for the github page
     runs-on: ubuntu-20.04
+    if:
+      contains('
+        refs/heads/web-components-step-5
+      ', github.ref)
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js
@@ -25,8 +27,6 @@ jobs:
       - name: Run e2e tests
         run: yarn test
   e2e:
-    branches:
-      - '!web-components-step-5'
     name: e2e tests
     runs-on: ubuntu-20.04
     steps:
