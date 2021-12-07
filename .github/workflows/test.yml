@@ -26,7 +26,7 @@ jobs:
         run: yarn test
   e2e:
     if: 
-      branches-ignore: [ web-components-step-5 ]
+      branches: [ web-components-step-1, web-components-step-2, web-components-step-3, web-components-step-4 ]
     name: e2e tests
     runs-on: ubuntu-20.04
     steps:
