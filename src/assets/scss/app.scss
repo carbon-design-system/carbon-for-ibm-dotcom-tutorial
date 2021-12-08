@@ -8,9 +8,29 @@
 @include carbon--font-face-sans();
 @include carbon--type-reset();
 
+.g10-theme {
+  @include carbon--theme($carbon--theme--g10, true);
+}
+
+.g90-theme {
+  @include carbon--theme($carbon--theme--g90, true);
+}
+
 .dark-theme {
   @include carbon--theme($carbon--theme--g100, true);
+}
 
+*[class$='-theme'] {
   background-color: var(--cds-ui-background);
   color: var(--cds-text-01);
+}
+
+.bx-ce-demo-devenv--tab-panels {
+  flex: 1;
+  padding: 1rem;
+  align-self: stretch;
+}
+
+*:not(:defined) {
+  visibility: hidden;
 }
