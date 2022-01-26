@@ -11,7 +11,7 @@ concurrency:
 jobs:
   e2e-github-pages:
     name: e2e test github page
-    if: github.event.pull_request.base.ref == 'web-components-step-5'
+    if: github.event.pull_request.base.ref == 'web-components-step-2'
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
@@ -25,7 +25,7 @@ jobs:
         run: yarn cypress run
   e2e:
     name: e2e tests
-    if: github.event.pull_request.base.ref != 'web-components-step-5'
+    if: github.event.pull_request.base.ref != 'web-components-step-2'
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
