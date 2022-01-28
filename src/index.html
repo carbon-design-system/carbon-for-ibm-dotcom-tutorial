@@ -55,18 +55,15 @@
           },
         },
       };
-    </script>
-
-    <script>
-      window.digitalData = {
-        ...
-      };
 
       var params = new URLSearchParams(window.location.search);
 
-      if(params.has('lc') && params.has('cc')) {
-        var currentLang = params.get('lc') + '-' + params.get('cc').toUpperCase();
-        document.getElementsByTagName("html")[0].setAttribute("lang", currentLang);
+      if (params.has('lc') && params.has('cc')) {
+        var currentLang =
+          params.get('lc') + '-' + params.get('cc').toUpperCase();
+        document
+          .getElementsByTagName('html')[0]
+          .setAttribute('lang', currentLang);
         digitalData.page.pageInfo.language = currentLang;
         digitalData.page.pageInfo.ibm.country = params.get('cc').toUpperCase();
       }
