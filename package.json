@@ -61,5 +61,8 @@
     "webpack": "^4.46.0",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.1.0"
+  },
+  "dependencies": {
+    "@carbon/ibmdotcom-web-components": "1.14.0"
   }
 }
