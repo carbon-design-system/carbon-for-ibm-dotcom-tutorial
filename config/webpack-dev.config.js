@@ -34,7 +34,7 @@ _webpackConfig.module.rules.push({
 });
 
 _webpackConfig.devServer = {
-  port: 8081,
+  port: 8000,
   static: {
     directory: path.join(__dirname, '../dist'),
   },
@@ -45,9 +45,10 @@ _webpackConfig.devServer = {
 _webpackConfig.plugins.push(
   new BrowserSyncPlugin(
     {
+      open: false,
       host: 'localhost',
-      port: 3000,
-      proxy: 'http://localhost:8081/',
+      port: 3001,
+      proxy: 'http://localhost:8000/',
       startPath: '/',
       files: [
         {
