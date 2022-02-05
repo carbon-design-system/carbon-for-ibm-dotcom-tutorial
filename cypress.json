@@ -1,5 +1,5 @@
 {
-  "baseUrl": "http://localhost:8080",
+  "baseUrl": "https://gsantosoliver.github.io/carbon-for-ibm-dotcom-tutorial/index.html",
   "browser": "chrome",
   "headless": true,
   "includeShadowDom": true,
