@@ -19,4 +19,13 @@ import '@carbon/ibmdotcom-web-components/es/components/cta/link-list-item-card-c
 import '@carbon/ibmdotcom-web-components/es/components/card-section-offset/index.js';
 import '@carbon/ibmdotcom-web-components/es/components/card-in-card/index.js';
 
+import 'carbon-web-components/es/components/tag/tag';
+import 'carbon-web-components/es/components/tabs/index';
+
+import 'carbon-web-components/es/components/data-table/index';
+
+import 'carbon-web-components/es/components/radio-button/index';
+
+import 'carbon-web-components/es/components/structured-list/index';
+
 import '../scss/app.scss';
