@@ -28,7 +28,7 @@ describe('step-4', () => {
       'be.visible'
     );
 
-    cy.get('dds-content-section > dds-content-block > bx-tabs > bx-tab').should(
+    cy.get('dds-content-section > dds-content-block > bx-tabs').should(
       'have.length',
       4
     );
