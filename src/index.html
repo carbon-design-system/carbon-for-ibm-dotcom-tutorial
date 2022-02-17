@@ -101,6 +101,14 @@
                   <dds-image slot="image" alt="Image alt text" default-src="./assets/images/analytics-services-card1.png"></dds-image>
                   <dds-card-eyebrow>Apache Spark and Hadoop service</dds-card-eyebrow>
                   <dds-card-heading>IBM® Analytics Engine</dds-card-heading>
+                  <dds-tag-group>
+                    <bx-tag>
+                      Most popular
+                    </bx-tag>
+                    <bx-tag type="purple">
+                      Enterprise
+                    </bx-tag>
+                  </dds-tag-group>
                   <dds-card-cta-footer cta-type='local'>
                   </dds-card-cta-footer>
                 </dds-card-group-item>
@@ -419,7 +427,126 @@
             </dds-cta-block>
           </dds-cta-section>
         </div>
+
+        <a name="6" data-title="Carbon components"></a>
+        <dds-content-section>
+          <dds-content-section-heading>Carbon components</dds-content-section-heading>
+            <dds-content-block>
+              <dds-content-block-heading>What is Carbon?</dds-content-block-heading>
+              <dds-content-block-copy>Carbon is IBM’s open source design system for products and digital experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.</dds-content-block-copy>
+
+              <bx-tabs value="table">
+                <bx-tab id="table" target="panel-table" value="table">Data table</bx-tab>
+                <bx-tab id="list" target="panel-list" value="list">Structured list</bx-tab>
+                <bx-tab id="dropdown" target="panel-dropdown" value="dropdown">Dropdown</bx-tab>
+                <bx-tab id="radio-buttons" target="panel-radio-buttons" value="radio-buttons">Radio buttons</bx-tab>
+              </bx-tabs>
+
+              <div class='bx--tab-panels'>
+                <div id="panel-table" role="tabpanel" aria-labelledby="table">
+                  <bx-table>
+                    <bx-table-head>
+                      <bx-table-header-row>
+                        <bx-table-header-cell>Name</bx-table-header-cell>
+                        <bx-table-header-cell>Protocol</bx-table-header-cell>
+                        <bx-table-header-cell>Port</bx-table-header-cell>
+                        <bx-table-header-cell>Rule</bx-table-header-cell>
+                        <bx-table-header-cell>Attached Groups</bx-table-header-cell>
+                        <bx-table-header-cell>Status</bx-table-header-cell>
+                      </bx-table-header-row>
+                    </bx-table-head>
+                    <bx-table-body>
+                      <bx-table-row>
+                        <bx-table-cell>Load Balancer 1</bx-table-cell>
+                        <bx-table-cell>HTTP</bx-table-cell>
+                        <bx-table-cell>80</bx-table-cell>
+                        <bx-table-cell>Round Robin</bx-table-cell>
+                        <bx-table-cell>Maureen's VM Groups</bx-table-cell>
+                        <bx-table-cell>Active</bx-table-cell>
+                      </bx-table-row>
+                      <bx-table-row>
+                        <bx-table-cell>Load Balancer 2</bx-table-cell>
+                        <bx-table-cell>HTTP</bx-table-cell>
+                        <bx-table-cell>80</bx-table-cell>
+                        <bx-table-cell>Round Robin</bx-table-cell>
+                        <bx-table-cell>Maureen's VM Groups</bx-table-cell>
+                        <bx-table-cell>Active</bx-table-cell>
+                      </bx-table-row>
+                      <bx-table-row>
+                        <bx-table-cell>Load Balancer 3</bx-table-cell>
+                        <bx-table-cell>HTTP</bx-table-cell>
+                        <bx-table-cell>80</bx-table-cell>
+                        <bx-table-cell>Round Robin</bx-table-cell>
+                        <bx-table-cell>Maureen's VM Groups</bx-table-cell>
+                        <bx-table-cell>Active</bx-table-cell>
+                      </bx-table-row>
+                    </bx-table-body>
+                  </bx-table>
+                </div>
+
+                <div id="panel-list" role="tabpanel" aria-labelledby="list">
+                  <bx-structured-list>
+                    <bx-structured-list-head>
+                      <bx-structured-list-header-row>
+                        <bx-structured-list-header-cell>Cell A</bx-structured-list-header-cell>
+                        <bx-structured-list-header-cell>Cell B</bx-structured-list-header-cell>
+                        <bx-structured-list-header-cell>Cell C</bx-structured-list-header-cell>
+                      </bx-structured-list-header-row>
+                    </bx-structured-list-head>
+                    <bx-structured-list-body>
+                      <bx-structured-list-row>
+                        <bx-structured-list-cell>Row 1</bx-structured-list-cell>
+                        <bx-structured-list-cell>Row 1</bx-structured-list-cell>
+                        <bx-structured-list-cell>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dui magna, finibus id tortor sed, aliquet bibendum augue. Aenean posuere sem vel euismod dignissim.</bx-structured-list-cell>
+                      </bx-structured-list-row>
+                      <bx-structured-list-row>
+                        <bx-structured-list-cell>Row 2</bx-structured-list-cell>
+                        <bx-structured-list-cell>Row 2</bx-structured-list-cell>
+                        <bx-structured-list-cell>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dui magna, finibus id tortor sed, aliquet bibendum augue. Aenean posuere sem vel euismod dignissim.</bx-structured-list-cell>
+                      </bx-structured-list-row>
+                      <bx-structured-list-row>
+                        <bx-structured-list-cell>Row 3</bx-structured-list-cell>
+                        <bx-structured-list-cell>Row 3</bx-structured-list-cell>
+                        <bx-structured-list-cell>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dui magna, finibus id tortor sed, aliquet bibendum augue. Aenean posuere sem vel euismod dignissim.</bx-structured-list-cell>
+                      </bx-structured-list-row>
+                    </bx-structured-list-body>
+                  </bx-structured-list>
+                </div>
+
+                <div id="panel-dropdown" role="tabpanel" aria-labelledby="dropdown">
+                  <div class="bx--col-lg-8 bx--offset-lg-4 bx--no-gutter">
+                    <bx-dropdown trigger-content='Select theme'>
+                      <bx-dropdown-item value='white-theme'>White theme</bx-dropdown-item>
+                      <bx-dropdown-item value='g10-theme'>Gray 10 theme</bx-dropdown-item>
+                      <bx-dropdown-item value='g90-theme'>Gray 90 theme</bx-dropdown-item>
+                      <bx-dropdown-item value='dark-theme'>Dark theme</bx-dropdown-item>
+                    </bx-dropdown>
+                  </div>
+                </div>
+
+                <div id="panel-radio-buttons" role="tabpanel" aria-labelledby="radio-buttons">
+                  <div class="bx--col-lg-10 bx--offset-lg-2 bx--no-gutter">
+                    <bx-radio-button-group name='theme-changer'>
+                      <bx-radio-button value='white-theme' label-text='White theme'></bx-radio-button>
+                      <bx-radio-button value='g10-theme' label-text='Gray 10 theme'></bx-radio-button>
+                      <bx-radio-button value='g90-theme' label-text='Gray 90 theme'></bx-radio-button>
+                      <bx-radio-button value='dark-theme' label-text='Dark theme'></bx-radio-button>
+                    </bx-radio-button-group>
+                  </div>
+                </div>
+              </div>
+          </dds-content-block>
+        </dds-content-section>
       </dds-table-of-contents>
     </dds-dotcom-shell-container>
   </body>
+  <script>
+    function changeTheme(event) {
+      const { value } = event.detail.item || event.detail;
+      document.body.classList.value = value;
+    }
+
+    document.addEventListener('bx-dropdown-selected', changeTheme)
+    document.addEventListener('bx-radio-button-group-changed', changeTheme)
+  </script>
 </html>
