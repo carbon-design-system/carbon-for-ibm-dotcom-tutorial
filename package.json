@@ -61,5 +61,9 @@
     "webpack": "^4.46.0",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.1.0"
+  },
+  "dependencies": {
+    "assert": "^2.0.0",
+    "flat": "^5.0.2"
   }
 }
