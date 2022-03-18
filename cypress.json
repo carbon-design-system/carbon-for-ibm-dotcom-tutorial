@@ -1,5 +1,5 @@
 {
-  "baseUrl": "https://mrpcarey.github.io/carbon-for-ibm-dotcom-tutorial/step-5",
+  "baseUrl": "https://mrpcarey.github.io/carbon-for-ibm-dotcom-tutorial/",
   "browser": "chrome",
   "headless": true,
   "includeShadowDom": true,
