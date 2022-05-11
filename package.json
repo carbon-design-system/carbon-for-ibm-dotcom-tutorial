@@ -8,6 +8,7 @@
     "clean": "rimraf dist",
     "lint": "eslint src",
     "lint:styles": "stylelint '**/*.{css,scss}'",
+    "lint:styles": "stylelint **/*.{css,scss}",
     "start": "webpack serve --config ./config/webpack-dev.config.js",
     "test": "start-server-and-test 'http-server -c-1 dist --silent' 8080   'cypress run'"
   },
@@ -28,7 +29,7 @@
     "cypress": "^9.1.1",
     "cypress-wait-until": "^1.7.2",
     "dotenv": "^8.2.0",
-    "eslint": "^6.8.0",
+    "eslint": "^8.4.1",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-config-prettier": "^5.0.0",
