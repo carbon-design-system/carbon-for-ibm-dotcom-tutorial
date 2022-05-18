@@ -7,3 +7,10 @@
 @include carbon--font-face-mono();
 @include carbon--font-face-sans();
 @include carbon--type-reset();
+
+.dark-theme {
+  @include carbon--theme($carbon--theme--g100, true);
+
+  background-color: var(--cds-ui-background);
+  color: var(--cds-text-01);
+}
