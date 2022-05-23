@@ -1,5 +1,5 @@
 {
-  "baseUrl": "http://localhost:8080",
+  "baseUrl": "https://gabi-fernandes.github.io/carbon-for-ibm-dotcom-tutorial/",
   "browser": "chrome",
   "headless": true,
   "includeShadowDom": true,
