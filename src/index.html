@@ -6,9 +6,69 @@
   <title>Carbon for IBM.com Tutorial</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="This is an example page for the Carbon for IBM.com Tutorial" />
+
+  <script>
+    window.digitalData = {
+      page: {
+        category: {
+          primaryCategory: '', // e.g. SB03
+        },
+        pageInfo: {
+          effectiveDate: '', // e.g. 2014-11-19
+          expiryDate: '', // e.g. 2017-11-19
+          language: 'en-US', // e.g. en-US
+          publishDate: '', // e.g. 2014-11-19
+          publisher: '', // e.g. IBM Corporation
+          version: 'Carbon for IBM.com',
+          ibm: {
+            contentDelivery: '', // e.g. ECM/Filegen
+            contentProducer: '', // e.g. ECM/IConS Adopter 34 - GS83J2343G3H3ERG - 11/19/2014 05:14:02 PM
+            country: '', // e.g. US
+            industry: '', // e.g. B,U
+            owner: '', // e.g. Some Person/City/IBM
+            siteID: '', // e.g. MySiteID
+            subject: '', // e.g. SW492
+            type: '', // e.g CT305
+          },
+        },
+      },
+    };
+    var params = new URLSearchParams(window.location.search);
+
+    if(params.has('lc') && params.has('cc')) {
+      var currentLang = params.get('lc') + '-' + params.get('cc').toUpperCase();
+      document.getElementsByTagName("html")[0].setAttribute("lang", currentLang);
+      digitalData.page.pageInfo.language = currentLang;
+      digitalData.page.pageInfo.ibm.country = params.get('cc').toUpperCase();
+    }
+  </script>
+
+  <script
+    src="//1.www.s81c.com/common/stats/ibm-common.js"
+    type="text/javascript"
+    async="async">
+  </script>
+
+  <link rel="alternate" hreflang="en-us" href="./index.html?cc=us&lc=en" />
+  <link rel="alternate" hreflang="fr-ca" href="./index.html?cc=ca&lc=fr" />
+  <link rel="alternate" hreflang="ko-kr" href="./index.html?cc=kr&lc=ko" />
+  <link rel="alternate" hreflang="ja-jp" href="./index.html?cc=jp&lc=ja" />
+
+  <meta charset="UTF-8" />
+
+  <link rel="icon" href="//www.ibm.com/favicon.ico" />
+
+  <meta name="dcterms.date" content="YYYY-MM-DD" /> // replace with today's date
+  <meta name="dcterms.rights" content="© Copyright IBM Corp. 2021" />
+  <meta name="geo.country" content="US" />
+  <meta name="robots" content="index,follow" />
+
 </head>
 
 <body>
-Hello Carbon for IBM.com! Well, not quite yet. This is the starting point for the Carbon for IBM.com tutorial.
+  <dds-dotcom-shell-container>
+    <main>Hello World!</main>
+  </dds-dotcom-shell-container>
 </body>
+
 </html>
