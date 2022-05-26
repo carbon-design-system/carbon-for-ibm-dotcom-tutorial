@@ -9,6 +9,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+<<<<<<< HEAD
   e2e-github-pages:
     name: e2e test github page
     if: github.event.pull_request.base.ref == 'web-components-step-5'
@@ -26,6 +27,10 @@ jobs:
   e2e:
     name: e2e tests
     if: github.event.pull_request.base.ref != 'web-components-step-5'
+=======
+  e2e:
+    name: e2e tests
+>>>>>>> 59b083a5e4179831189f34cae93158fe976463f1
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
