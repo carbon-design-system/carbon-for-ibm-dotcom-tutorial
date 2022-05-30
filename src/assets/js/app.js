@@ -7,7 +7,6 @@ import '@carbon/ibmdotcom-web-components/es/components/content-section/index.js'
 import '@carbon/ibmdotcom-web-components/es/components/cta-section/index.js';
 
 import '../scss/app.scss';
-import '../scss/index.scss';
 
 import '@carbon/ibmdotcom-web-components/es/components/content-section/index.js';
 import '@carbon/ibmdotcom-web-components/es/components/content-block/index.js';
