@@ -16,4 +16,8 @@ import '@carbon/ibmdotcom-web-components/es/components/card-in-card/index.js';
 import '@carbon/ibmdotcom-web-components/es/components/cta/video-cta-container.js';
 import '@carbon/ibmdotcom-web-components/es/components/cta/index.js';
 
+import '@carbon/ibmdotcom-web-components/es/components/content-item/index.js';
+import '@carbon/ibmdotcom-web-components/es/components/image-with-caption/index.js';
+import '@carbon/ibmdotcom-web-components/es/components/cta/link-list-item-card-cta.js';
+
 import '../scss/app.scss';
