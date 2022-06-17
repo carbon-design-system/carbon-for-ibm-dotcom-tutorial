@@ -61,5 +61,13 @@
     "webpack": "^4.46.0",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.1.0"
+  },
+  "dependencies": {
+    "@carbon/grid": "10.43.0",
+    "@carbon/ibmdotcom-web-components": "1.16.1",
+    "@carbon/themes": "10.53.1",
+    "@carbon/type": "10.43.1",
+    "carbon-components": "10.55.0",
+    "carbon-web-components": "1.21.0"
   }
 }
