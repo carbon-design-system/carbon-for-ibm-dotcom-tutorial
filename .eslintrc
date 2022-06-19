@@ -1,9 +1,8 @@
 {
   "parser": "@babel/eslint-parser",
-  "extends": [
-    "eslint:recommended",
-    "plugin:jsdoc/recommended"
-  ],
+      "parserOptions": {
+        "requireConfigFile": false
+      },
   "plugins": ["jsdoc", "tree-shaking"],
   "rules": {
     // Handle cases where we are destructuring but may not be using the initial
