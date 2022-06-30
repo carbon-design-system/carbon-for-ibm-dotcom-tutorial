@@ -30,3 +30,9 @@
   background-color: var(--cds-ui-background);
   color: var(--cds-text-01);
 }
+
+.bx--tab-panels {
+  flex: 1;
+  padding: 1rem;
+  align-self: stretch;
+}
