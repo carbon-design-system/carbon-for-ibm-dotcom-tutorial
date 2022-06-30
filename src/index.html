@@ -56,23 +56,14 @@
         digitalData.page.pageInfo.language = currentLang;
         digitalData.page.pageInfo.ibm.country = params.get('cc').toUpperCase();
       }
+      
     </script>
     <script
       src="//1.www.s81c.com/common/stats/ibm-common.js"
       type="text/javascript"
       async="async"></script>
-    <script>
-      function changeTheme(event) {
-        const { value } = event.detail.item || event.detail;
-        document.body.classList.value = value;
-      }
-      
-      document.addEventListener('bx-dropdown-selected', changeTheme)
-      document.addEventListener('bx-radio-button-group-changed', changeTheme)
-      </script>
   </head>
   <body>
-    
     <dds-dotcom-shell-container>
       <div class="bx--grid">
         <div class="bx--row">
@@ -225,42 +216,54 @@
             href="https://example.com">
             See the full range of benefits
           </dds-text-cta>
-          <dds-card-group slot="card-group" cards-per-row="2">
-            <dds-card-group-item empty></dds-card-group-item>
-            <dds-card-group-item cta-type="local" href="https://example.com">
-              <dds-card-eyebrow>Collaboration</dds-card-eyebrow>
-              <dds-card-heading
-                >Connect teams across functions</dds-card-heading
-               >
-              <p>
-                Collaborate in teams across functions to access all trusted data
-                and best-in- class technologies.
-              </p>
-              <dds-card-cta-footer slot="footer"> </dds-card-cta-footer>
+          <dds-card-group>
+            <dds-card-group-item cta-type='local' href='https://example.com'>
+              <dds-image slot="image" alt="Image alt text" default-src="./assets/images/analytics-services-card1.png"></dds-image>
+              <dds-card-eyebrow>Apache Spark and Hadoop service</dds-card-eyebrow>
+              <dds-card-heading>IBM® Analytics Engine</dds-card-heading>
+               <!-- tag group here -->
+               <dds-tag-group>
+                <bx-tag>
+                  Most popular
+                </bx-tag>
+                <bx-tag type="purple">
+                  Enterprise
+                </bx-tag>
+              </dds-tag-group>
+          
+              <dds-card-cta-footer cta-type='local'>
+              </dds-card-cta-footer>
             </dds-card-group-item>
-            <dds-card-group-item cta-type="local" href="https://example.com">
-              <dds-card-eyebrow>Innovation</dds-card-eyebrow>
-              <dds-card-heading
-                >Discover new insights from data</dds-card-heading
-              >
-              <p>
-                Use multiple analytics technologies to learn from data and
-                quickly get new answers for your business.
-              </p>
-              <dds-card-cta-footer slot="footer"> </dds-card-cta-footer>
+            <dds-card-group-item cta-type='local' href='https://example.com'>
+              <dds-image slot="image" alt="Image alt text" default-src="./assets/images/analytics-services-card2.png"></dds-image>
+              <dds-card-eyebrow>Cluster computing framework</dds-card-eyebrow>
+              <dds-card-heading>Apache Spark</dds-card-heading>
+              <dds-card-cta-footer cta-type='local'>
+              </dds-card-cta-footer>
             </dds-card-group-item>
-            <dds-card-group-item cta-type="local" href="https://example.com">
-              <dds-card-eyebrow>Fast delivery</dds-card-eyebrow>
-              <dds-card-heading
-                >Accelerate delivery of insights</dds-card-heading
-              >
-              <p>
-                Deliver new insights to your business quickly, and
-                continuously improve them through rapid iteration.
-              </p>
-              <dds-card-cta-footer slot="footer"> </dds-card-cta-footer>
+            <dds-card-group-item cta-type='local' href='https://example.com'>
+              <dds-image slot="image" alt="Image alt text" default-src="./assets/images/analytics-services-card3.png"></dds-image>
+              <dds-card-eyebrow>IBM Cloud</dds-card-eyebrow>
+              <dds-card-heading>IBM Information Server on Cloud®</dds-card-heading>
+              <dds-card-cta-footer cta-type='local'>
+              </dds-card-cta-footer>
+            </dds-card-group-item>
+            <dds-card-group-item cta-type='local' href='https://example.com'>
+              <dds-image slot="image" alt="Image alt text" default-src="./assets/images/analytics-services-card4.png"></dds-image>
+              <dds-card-eyebrow>Data trust service</dds-card-eyebrow>
+              <dds-card-heading>IBM® Master Data Management on Cloud</dds-card-heading>
+              <dds-card-cta-footer cta-type='local'>
+              </dds-card-cta-footer>
+            </dds-card-group-item>
+            <dds-card-group-item cta-type='local' href='https://example.com'>
+              <dds-image slot="image" alt="Image alt text" default-src="./assets/images/analytics-services-card5.png"></dds-image>
+              <dds-card-eyebrow>Data range analysis</dds-card-eyebrow>
+              <dds-card-heading>IBM® Streaming Analytics</dds-card-heading>
+              <dds-card-cta-footer cta-type='local'>
+              </dds-card-cta-footer>
             </dds-card-group-item>
           </dds-card-group>
+        
         </dds-card-section-offset>
         <a name="4" data-title="IBM Analytics Engine"></a>
         <dds-content-section>
@@ -443,7 +446,6 @@
             <dds-content-block>
               <dds-content-block-heading>What is Carbon?</dds-content-block-heading>
               <dds-content-block-copy>Carbon is IBM’s open source design system for products and digital experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.</dds-content-block-copy>
-
               <bx-tabs value="table">
                 <bx-tab id="table" target="panel-table" value="table">Data table</bx-tab>
                 <bx-tab id="list" target="panel-list" value="list">Structured ist</bx-tab>
@@ -451,8 +453,6 @@
                 <bx-tab id="radio-buttons" target="panel-radio-buttons" value="radio-buttons">Radio buttons</bx-tab>
               </bx-tabs>
               <div class='bx--tab-panels'>
-
-                <!-- add individual tab divs here -->
                 <div id="panel-table" role="tabpanel" aria-labelledby="table">
                   <bx-table>
                     <bx-table-head>
@@ -492,7 +492,6 @@
                       </bx-table-row>   
                     </bx-table-body>
                   </bx-table>
-
                 </div>
                 <div id="panel-dropdown" role="tabpanel" aria-labelledby="dropdown">
                   <div class="bx--col-lg-8 bx--offset-lg-4 bx--no-gutter">
@@ -515,7 +514,6 @@
                   </div>
                 </div>
                 <div id="panel-list" role="tabpanel" aria-labelledby="list">
-
                   <bx-structured-list>
                     <bx-structured-list-head>
                       <bx-structured-list-header-row>
@@ -543,29 +541,6 @@
                     </bx-structured-list-body>
                   </bx-structured-list>
                 </div>
-
-                <div id="panel-dropdown" role="tabpanel" aria-labelledby="dropdown">
-                  <div class="bx--col-lg-8 bx--offset-lg-4 bx--no-gutter">
-                    <bx-dropdown trigger-content='Select theme'>
-                      <bx-dropdown-item value='white-theme'>White theme</bx-dropdown-item>
-                      <bx-dropdown-item value='g10-theme'>Gray 10 theme</bx-dropdown-item>
-                      <bx-dropdown-item value='g90-theme'>Gray 90 theme</bx-dropdown-item>
-                      <bx-dropdown-item value='dark-theme'>Dark theme</bx-dropdown-item>
-                    </bx-dropdown>
-                  </div>
-                </div>
-
-                <div id="panel-radio-buttons" role="tabpanel" aria-labelledby="radio-buttons">
-                  <div class="bx--col-lg-10 bx--offset-lg-2 bx--no-gutter">
-                    <bx-radio-button-group name='theme-changer'>
-                      <bx-radio-button value='white-theme' label-text='White theme'></bx-radio-button>
-                      <bx-radio-button value='g10-theme' label-text='Gray 10 theme'></bx-radio-button>
-                      <bx-radio-button value='g90-theme' label-text='Gray 90 theme'></bx-radio-button>
-                      <bx-radio-button value='dark-theme' label-text='Dark theme'></bx-radio-button>
-                    </bx-radio-button-group>
-                  </div>
-                </div>
-
               </div>
           </dds-content-block>
         </dds-content-section>
