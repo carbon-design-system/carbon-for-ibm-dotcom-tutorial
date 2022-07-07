@@ -9,7 +9,6 @@ import '@carbon/ibmdotcom-web-components/es/components/cta-section/index.js';
 import '@carbon/ibmdotcom-web-components/es/components/content-block/index.js';
 import '@carbon/ibmdotcom-web-components/es/components/content-group/index.js';
 import '@carbon/ibmdotcom-web-components/es/components/content-item/index.js';
-
 import '@carbon/ibmdotcom-web-components/es/components/card-group/index.js';
 import '@carbon/ibmdotcom-web-components/es/components/image/index.js';
 import '@carbon/ibmdotcom-web-components/es/components/image-with-caption/index.js';
