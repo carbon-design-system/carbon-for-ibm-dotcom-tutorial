@@ -8,6 +8,11 @@
 @include carbon--font-face-sans();
 @include carbon--type-reset();
 
+.bx--tab-panels {
+  flex: 1;
+  padding: 1rem;
+  align-self: stretch;
+}
 .g10-theme {
   @include carbon--theme($carbon--theme--g10, true);
 }
@@ -23,10 +28,4 @@
 *[class$='-theme'] {
   background-color: var(--cds-ui-background);
   color: var(--cds-text-01);
-}
-
-.bx--tab-panels {
-  flex: 1;
-  padding: 1rem;
-  align-self: stretch;
 }
