@@ -20,6 +20,9 @@ pull_request_rules:
           'Hi, it looks like you are missing something. Double check your code,
           your preview URL should match the
           [corresponding step](https://www.ibm.com/standards/carbon/developing/web-components-tutorial/overview)
-          in the tutorial.'
+          in the tutorial.
+
+          If you need more help, you can post a question over at the #carbon-for-ibm-dotcom slack channel or join
+          the weekly [Carbon for IBM.com Developer Office Hours](https://ec.yourlearning.ibm.com/w3/event/10289727)'
       label:
         add: ['status: needs correction']
