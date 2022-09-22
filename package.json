@@ -2,7 +2,7 @@
   "name": "carbon-for-ibm-dotcom-tutorial",
   "version": "0.0.0",
   "private": true,
-  "license" : "SEE LICENSE IN LICENSE file ",
+  "license" : "SEE LICENSE IN LICENSE file",
   "scripts": {
     "build": "webpack --config ./config/webpack-prod.config.js",
     "ci-check": "yarn lint && yarn lint:styles",
