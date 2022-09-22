@@ -25,6 +25,9 @@
     "stylelint-scss": "^3.5.3"
   },
   "devDependencies": {
-    "stylelint": "^9.10.1"
+    "stylelint": "^9.10.1",
+    "@babel/core": "^7.1.2",
+    "@babel/eslint-parser": "^7.16.3",
+    "@babel/preset-env": "^7.1.0"
   }
 }
