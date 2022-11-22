@@ -1,5 +1,5 @@
 {
-  "baseUrl": "https://richkummer.github.io/carbon-for-ibm-dotcom-tutorial/",
+  "baseUrl": "https://richkummer.github.io/carbon-for-ibm-dotcom-tutorial",
   "browser": "chrome",
   "headless": true,
   "includeShadowDom": true,
