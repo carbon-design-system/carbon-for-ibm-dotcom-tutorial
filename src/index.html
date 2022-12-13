@@ -547,6 +547,28 @@
                   </bx-structured-list-body>
                 </bx-structured-list>
               </div>
+
+              <div id="panel-dropdown" role="tabpanel" aria-labelledby="dropdown">
+                <div class="bx--col-lg-8 bx--offset-lg-4 bx--no-gutter">
+                  <bx-dropdown trigger-content="Select theme">
+                    <bx-dropdown-item value="white-theme">White theme</bx-dropdown-item>
+                    <bx-dropdown-item value="g10-theme">Gray 10 theme</bx-dropdown-item>
+                    <bx-dropdown-item value="g90-theme">Gray 90 theme</bx-dropdown-item>
+                    <bx-dropdown-item value="dark-theme">Dark theme</bx-dropdown-item>
+                  </bx-dropdown>
+                </div>
+              </div>
+
+              <div id="panel-radio-buttons" role="tabpanel" aria-labelledby="radio-buttons">
+                <div class="bx--col-lg-10 bx--offset-lg-2 bx--no-gutter">
+                  <bx-radio-button-group name="theme-changer">
+                    <bx-radio-button value="white-theme" label-text="White theme"></bx-radio-button>
+                    <bx-radio-button value="g10-theme" label-text="Gray 10 theme"></bx-radio-button>
+                    <bx-radio-button value="g90-theme" label-text="Gray 90 theme"></bx-radio-button>
+                    <bx-radio-button value="dark-theme" label-text="Dark theme"></bx-radio-button>
+                  </bx-radio-button-group>
+                </div>
+              </div>
             </div>
           </dds-content-block>
         </dds-content-section>
