@@ -25,4 +25,14 @@ import 'carbon-web-components/es/components/data-table/index';
 import 'carbon-web-components/es/components/radio-button/index';
 import 'carbon-web-components/es/components/structured-list/index';
 
+import 'carbon-web-components/es/components/tag/tag';
+
+import 'carbon-web-components/es/components/tabs/index';
+
+import 'carbon-web-components/es/components/data-table/index';
+
+import 'carbon-web-components/es/components/radio-button/index';
+
+import 'carbon-web-components/es/components/structured-list/index';
+
 import '../scss/app.scss';
