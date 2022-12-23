@@ -107,6 +107,7 @@ typings/
 *.swp
 .idea
 .vscode
+.fleet/
 
 # Cypress
 cypress/screenshots
